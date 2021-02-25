@@ -1,0 +1,105 @@
+<!-- 圣杯与双翼飞 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* .father{
+      width: 100%;
+      height: 100px;
+      background-color: #ccc;
+      padding: 0 200px 0 100px;
+    }
+    .left{
+      width: 100px;
+      height: 100px;
+      float: left;
+      background-color: red;
+      margin-left: -100%;
+      position: relative;
+      left:-100px;
+    }
+    .middle{
+      width: 100%;
+      height: 100px;
+      float: left;
+      background-color: pink;
+    }
+    .right{
+      width: 200px;
+      height: 100px;
+      float: left;
+      background-color: blue;
+      margin-left: -200px;
+      position: relative;
+      left:200px;
+    } */
+    .father{
+      width: 100%;
+      height: 100px;
+      background-color: #ccc;
+    }
+    .left{
+      width: 100px;
+      height: 100px;
+      float: left;
+      background-color: red;
+      margin-left: -100%;
+    }
+    .middle-wrap{
+      width: 100%;
+      height: 100px;
+      float: left;
+      background-color: pink;
+    }
+    .middle{
+      margin: 0 200px 0 100px;
+    }
+    .right{
+      width: 200px;
+      height: 100px;
+      float: left;
+      background-color: blue;
+      margin-left: -200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="father">
+    <div class="middle-wrap">
+      <div class="middle">
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
+      </div>
+    </div>   
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+        overflow: hidden;
+    }
+    .a {
+        width: 100px;
+        height: 100px;
+        background: lightblue;
+        margin: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div style="height: 100px;width: 100px;float: left;background: lightblue">我是一个左浮动的元素</div>
+  <div style="width: 200px; height: 200px;float: left;background: #eee">我是一个没有设置浮动, 
+也没有触发 BFC 元素, width: 200px; height:200px; background: #eee;</div>
+</body>
+</html>
